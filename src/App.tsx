@@ -139,7 +139,7 @@ export default function App() {
             <a className="nav-link" href="#menu">Menu</a>
             <a className="nav-link" href="#experience">Experience</a>
             <a className="nav-link" href="#gallery">Gallery</a>
-            <a className="button button-light ml-2" href="#reserve">Book a table</a>
+            <a className="button button-light ml-2" href="https://www.district.in/dining/chennai/mishkat-restaurant-padur?srsltid=AU7gw4UArV83fkauV2rqTtR8E0UGnNb4juzWH-1IXnFieH0q3gHud6RK" target="_blank" rel="noreferrer">Book a table</a>
           </nav>
           <button
             aria-expanded={menuOpen}
@@ -172,7 +172,7 @@ export default function App() {
             </p>
             <div className="flex flex-wrap gap-3">
               <a className="button button-light" href="#menu">Explore menu</a>
-              <a className="button button-outline" href="#reserve">Book a table</a>
+              <a className="button button-outline" href="https://www.district.in/dining/chennai/mishkat-restaurant-padur?srsltid=AU7gw4UArV83fkauV2rqTtR8E0UGnNb4juzWH-1IXnFieH0q3gHud6RK" target="_blank" rel="noreferrer">Book a table</a>
             </div>
           </div>
         </div>
@@ -415,7 +415,7 @@ export default function App() {
               <a className="hover:text-brass" href="#story">Our story</a>
               <a className="hover:text-brass" href="#menu">Menu</a>
               <a className="hover:text-brass" href="#gallery">Gallery</a>
-              <a className="hover:text-brass" href="#reserve">Reservations</a>
+              <a className="hover:text-brass" href="https://www.district.in/dining/chennai/mishkat-restaurant-padur?srsltid=AU7gw4UArV83fkauV2rqTtR8E0UGnNb4juzWH-1IXnFieH0q3gHud6RK" target="_blank" rel="noreferrer">Reservations</a>
               <a className="hover:text-brass" href="#">Instagram</a>
             </div>
           </div>
