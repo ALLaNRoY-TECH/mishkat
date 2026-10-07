@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import mishkatLogo from "./assets/mishkat-logo.png";
 import mishkatLogoWhite from "./assets/mishkat-logo-black.png";
+import { FullMenuModal } from "./FullMenu";
 
 const images = {
   hero: "/mishkat/storefront-hero.png",
@@ -115,29 +116,7 @@ export default function App() {
 
   return (
     <main className="overflow-hidden bg-ivory text-charcoal">
-      {menuModalOpen && (
-        <div className="fixed inset-0 z-[200] flex flex-col bg-charcoal/95 backdrop-blur-md">
-          <div className="flex h-20 shrink-0 items-center justify-between px-6 lg:px-12">
-            <h2 style={{ fontFamily: "'Aref Ruqaa', serif" }} className="text-2xl text-ivory">Mishkat Menu</h2>
-            <button
-              onClick={() => setMenuModalOpen(false)}
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
-              aria-label="Close menu"
-            >
-              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-            </button>
-          </div>
-          <div className="flex-1 overflow-y-auto p-4 sm:p-8">
-            <div className="mx-auto max-w-4xl space-y-8 pb-20">
-              <img src="/mishkat/menu-starters.png" alt="Starters Menu" className="w-full rounded-lg shadow-2xl" />
-              <img src="/mishkat/menu-dry-delights.png" alt="Dry Delights Menu" className="w-full rounded-lg shadow-2xl" />
-              <img src="/mishkat/menu-grills.png" alt="Grills Menu" className="w-full rounded-lg shadow-2xl" />
-              <img src="/mishkat/menu-main-course.png" alt="Main Course Menu" className="w-full rounded-lg shadow-2xl" />
-              <img src="/mishkat/menu-platters.png" alt="Platters Menu" className="w-full rounded-lg shadow-2xl" />
-            </div>
-          </div>
-        </div>
-      )}
+      {menuModalOpen && <FullMenuModal onClose={() => setMenuModalOpen(false)} />}
       {showIntro && (
         <div
           onClick={dismissIntro}
@@ -153,7 +132,7 @@ export default function App() {
       <header className="absolute inset-x-0 top-0 z-50 border-b border-white/20 text-white">
         <div className="mx-auto flex h-32 max-w-[1500px] items-center justify-between px-6 lg:px-12">
           <a className="block flex items-center justify-center" href="#top" aria-label="Mishkat home">
-            <span style={{ fontFamily: "'Aref Ruqaa', serif" }} className="text-4xl md:text-5xl tracking-wide text-white drop-shadow-md">MISHKAT</span>
+            <img className="h-40 w-40 md:h-56 md:w-56 object-contain" src={mishkatLogoWhite} alt="Mishkat Restaurant" />
           </a>
           <nav className="hidden items-center gap-8 text-[0.69rem] font-medium uppercase tracking-[0.2em] lg:flex xl:gap-11">
             <a className="nav-link" href="#story">Our Story</a>
@@ -400,11 +379,11 @@ export default function App() {
             <div className="mt-12 grid gap-9 sm:grid-cols-2">
               <div>
                 <p className="info-label">Address</p>
-                <p className="mt-3 leading-7 text-charcoal/65">14, Khader Nawaz Khan Road<br />Nungambakkam, Chennai 600006</p>
+                <p className="mt-3 leading-7 text-charcoal/65">213/2B, Rajiv Gandhi Salai, near Roundana<br />Kalipattur, Chennai, Tamil Nadu 603103</p>
               </div>
               <div>
                 <p className="info-label">Hours</p>
-                <p className="mt-3 leading-7 text-charcoal/65">Monday–Sunday<br />12:00 PM–11:30 PM</p>
+                <p className="mt-3 leading-7 text-charcoal/65">Monday–Sunday<br />6:30 am–12:00 am</p>
               </div>
               <div>
                 <p className="info-label">Reservations</p>
@@ -412,15 +391,15 @@ export default function App() {
               <a className="leading-7 text-charcoal/65 hover:text-royal" href="mailto:tables@mishkat.in">tables@mishkat.in</a>
               </div>
               <div className="flex items-end">
-                <a className="text-link" href="https://maps.google.com/?q=Khader+Nawaz+Khan+Road+Chennai" target="_blank" rel="noreferrer">Get directions <ArrowIcon /></a>
+                <a className="text-link" href="https://maps.app.goo.gl/D3RAauPEfTieuECBA" target="_blank" rel="noreferrer">Get directions <ArrowIcon /></a>
               </div>
             </div>
           </div>
           <iframe
             className="min-h-[460px] w-full border-0 grayscale-[.65] contrast-[.9]"
             loading="lazy"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=80.238%2C13.048%2C80.265%2C13.075&layer=mapnik&marker=13.0604%2C80.2496"
-            title="Map showing Mishkat in Nungambakkam, Chennai"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=80.20%2C12.76%2C80.24%2C12.80&layer=mapnik&marker=12.784%2C80.220"
+            title="Map showing Mishkat in Kalipattur, Chennai"
           />
         </div>
       </section>
