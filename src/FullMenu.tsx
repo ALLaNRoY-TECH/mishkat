@@ -1,5 +1,7 @@
 import React from "react";
 
+const base = import.meta.env.BASE_URL;
+
 const fullMenu = [
   {
     category: "Seafood Soup",
@@ -20,7 +22,7 @@ const fullMenu = [
   },
   {
     category: "Chicken Dry Delights",
-    image: "/mishkat/chicken-grill.png",
+    image: `${base}mishkat/chicken-grill.png`,
     items: [
       { name: "Chicken Kabab", price: "290" },
       { name: "Pepper Chicken", price: "290" },
@@ -61,7 +63,7 @@ const fullMenu = [
   },
   {
     category: "Mutton Dry Delights",
-    image: "/mishkat/al-faham.png",
+    image: `${base}mishkat/al-faham.png`,
     items: [
       { name: "Mutton Fry", price: "330" },
       { name: "Mutton Pepper", price: "330" },
@@ -82,7 +84,7 @@ const fullMenu = [
   },
   {
     category: "Chicken Platters",
-    image: "/mishkat/shawarma-platter.png",
+    image: `${base}mishkat/shawarma-platter.png`,
     items: [
       { name: "Mishkat Special Platter", price: "1499" },
       { name: "Chicken Platter", price: "899" },
@@ -115,7 +117,7 @@ const fullMenu = [
 
 const tandooriAlFaham = {
   category: "Tandoori & Al Faham",
-  image: "/mishkat/pollichathu.png",
+  image: `${base}mishkat/pollichathu.png`,
   headers: ["Q", "H", "F"],
   items: [
     { name: "Al Faham", prices: ["190", "280", "540"] },

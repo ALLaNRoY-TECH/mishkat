@@ -2,13 +2,15 @@ import { useEffect, useRef, useState } from "react";
 import mishkatLogo from "./assets/mishkat-logo.png";
 import { FullMenuModal } from "./FullMenu";
 
+const base = import.meta.env.BASE_URL;
+
 const images = {
-  hero: "/mishkat/storefront-hero.png",
-  story: "/mishkat/pollichathu.png",
-  fish: "/mishkat/banana-leaf-fish.png",
-  kebab: "/mishkat/al-faham.png",
-  feast: "/mishkat/chicken-grill.png",
-  curry: "/mishkat/shawarma-platter.png",
+  hero: `${base}mishkat/storefront-hero.png`,
+  story: `${base}mishkat/pollichathu.png`,
+  fish: `${base}mishkat/banana-leaf-fish.png`,
+  kebab: `${base}mishkat/al-faham.png`,
+  feast: `${base}mishkat/chicken-grill.png`,
+  curry: `${base}mishkat/shawarma-platter.png`,
   interior: "https://images.unsplash.com/photo-1774989423979-6a7bf5add3f0?auto=format&fit=crop&w=1800&q=88",
 };
 
@@ -122,7 +124,7 @@ export default function App() {
           style={{ transitionDuration: '800ms' }}
           className={`fixed inset-0 z-[100] flex cursor-pointer flex-col items-center justify-center bg-royal transition-opacity ease-in-out ${fadeOutIntro ? "opacity-0" : "opacity-100"}`}
         >
-          <img src="/mishkat/mishkat-logo-white.png" alt="Mishkat" className="h-64 w-64 object-contain md:h-96 md:w-96" />
+          <img src={`${base}mishkat/mishkat-logo-white.png`} alt="Mishkat" className="h-64 w-64 object-contain md:h-96 md:w-96" />
           <p className="mt-12 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-brass opacity-80 animate-pulse">
             Click anywhere to dive into our world
           </p>
@@ -131,7 +133,7 @@ export default function App() {
       <header className="absolute inset-x-0 top-0 z-50 border-b border-white/20 text-white">
         <div className="mx-auto flex h-32 max-w-[1500px] items-center justify-between px-6 lg:px-12">
           <a className="block flex items-center justify-center" href="#top" aria-label="Mishkat home">
-            <img className="h-40 w-40 md:h-56 md:w-56 object-contain" src="/mishkat/mishkat-logo-white.png" alt="Mishkat Restaurant" />
+            <img className="h-40 w-40 md:h-56 md:w-56 object-contain" src={`${base}mishkat/mishkat-logo-white.png`} alt="Mishkat Restaurant" />
           </a>
           <nav className="hidden items-center gap-8 text-[0.69rem] font-medium uppercase tracking-[0.2em] lg:flex xl:gap-11">
             <a className="nav-link" href="#story">Our Story</a>
