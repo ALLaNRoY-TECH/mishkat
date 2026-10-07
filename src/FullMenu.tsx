@@ -1,8 +1,8 @@
 import React from "react";
-import chickenGrillImg from "./assets/mishkat/chicken-grill.png";
-import alFahamImg from "./assets/mishkat/al-faham.png";
-import shawarmaPlatterImg from "./assets/mishkat/shawarma-platter.png";
-import pollichathuImg from "./assets/mishkat/pollichathu.png";
+const chickenGrillImg = "/mishkat/chicken-grill.png";
+const alFahamImg = "/mishkat/al-faham.png";
+const shawarmaPlatterImg = "/mishkat/shawarma-platter.png";
+const pollichathuImg = "/mishkat/pollichathu.png";
 
 const fullMenu = [
   {

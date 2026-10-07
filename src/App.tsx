@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import mishkatLogo from "./assets/mishkat-logo.png";
 import { FullMenuModal } from "./FullMenu";
 
-import logoWhite from "./assets/mishkat/mishkat-logo-white.png";
-import heroImg from "./assets/mishkat/storefront-hero.png";
-import storyImg from "./assets/mishkat/pollichathu.png";
-import fishImg from "./assets/mishkat/banana-leaf-fish.png";
-import kebabImg from "./assets/mishkat/al-faham.png";
-import feastImg from "./assets/mishkat/chicken-grill.png";
-import curryImg from "./assets/mishkat/shawarma-platter.png";
+const logoWhite = "/mishkat/mishkat-logo-white.png";
+const heroImg = "/mishkat/storefront-hero.png";
+const storyImg = "/mishkat/pollichathu.png";
+const fishImg = "/mishkat/banana-leaf-fish.png";
+const kebabImg = "/mishkat/al-faham.png";
+const feastImg = "/mishkat/chicken-grill.png";
+const curryImg = "/mishkat/shawarma-platter.png";
 
 const images = {
   hero: heroImg,

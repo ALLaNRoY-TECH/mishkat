@@ -30,7 +30,7 @@ body {
 }
 
 .hero {
-  background-image: url("./assets/mishkat/storefront-hero.png");
+  background-image: url("/mishkat/storefront-hero.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -236,7 +236,7 @@ em {
   grid-column: 3;
   grid-row: 2 / 4;
   content: "";
-  background: url("./assets/mishkat/shawarma-platter.png") center / cover;
+  background: url("/mishkat/shawarma-platter.png") center / cover;
 }
 
 .reveal {
