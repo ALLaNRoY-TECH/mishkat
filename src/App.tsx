@@ -415,7 +415,7 @@ export default function App() {
         <div className="mx-auto max-w-[1400px]">
           <div className="flex flex-col justify-between gap-12 border-b border-white/15 pb-14 md:flex-row md:items-end">
             <div className="flex items-center gap-5">
-              <img className="h-36 w-36 shrink-0 object-contain" src={mishkatLogo} alt="Mishkat Restaurant" />
+              <img className="h-36 w-36 shrink-0 object-contain" src={logoWhite} alt="Mishkat Restaurant" />
               <p className="max-w-xs text-sm leading-6">The warmth of Malabar dining, served with a contemporary Chennai spirit.</p>
             </div>
             <div className="flex flex-wrap gap-x-8 gap-y-4 text-[0.62rem] uppercase tracking-[0.2em] text-white/80">
