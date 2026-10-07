@@ -2,15 +2,21 @@ import { useEffect, useRef, useState } from "react";
 import mishkatLogo from "./assets/mishkat-logo.png";
 import { FullMenuModal } from "./FullMenu";
 
-const base = import.meta.env.BASE_URL;
+import logoWhite from "./assets/mishkat/mishkat-logo-white.png";
+import heroImg from "./assets/mishkat/storefront-hero.png";
+import storyImg from "./assets/mishkat/pollichathu.png";
+import fishImg from "./assets/mishkat/banana-leaf-fish.png";
+import kebabImg from "./assets/mishkat/al-faham.png";
+import feastImg from "./assets/mishkat/chicken-grill.png";
+import curryImg from "./assets/mishkat/shawarma-platter.png";
 
 const images = {
-  hero: `${base}mishkat/storefront-hero.png`,
-  story: `${base}mishkat/pollichathu.png`,
-  fish: `${base}mishkat/banana-leaf-fish.png`,
-  kebab: `${base}mishkat/al-faham.png`,
-  feast: `${base}mishkat/chicken-grill.png`,
-  curry: `${base}mishkat/shawarma-platter.png`,
+  hero: heroImg,
+  story: storyImg,
+  fish: fishImg,
+  kebab: kebabImg,
+  feast: feastImg,
+  curry: curryImg,
   interior: "https://images.unsplash.com/photo-1774989423979-6a7bf5add3f0?auto=format&fit=crop&w=1800&q=88",
 };
 
@@ -124,7 +130,7 @@ export default function App() {
           style={{ transitionDuration: '800ms' }}
           className={`fixed inset-0 z-[100] flex cursor-pointer flex-col items-center justify-center bg-royal transition-opacity ease-in-out ${fadeOutIntro ? "opacity-0" : "opacity-100"}`}
         >
-          <img src={`${base}mishkat/mishkat-logo-white.png`} alt="Mishkat" className="h-64 w-64 object-contain md:h-96 md:w-96" />
+          <img src={logoWhite} alt="Mishkat" className="h-64 w-64 object-contain md:h-96 md:w-96" />
           <p className="mt-12 text-[0.65rem] font-semibold uppercase tracking-[0.25em] text-brass opacity-80 animate-pulse">
             Click anywhere to dive into our world
           </p>
@@ -133,7 +139,7 @@ export default function App() {
       <header className="absolute inset-x-0 top-0 z-50 border-b border-white/20 text-white">
         <div className="mx-auto flex h-32 max-w-[1500px] items-center justify-between px-6 lg:px-12">
           <a className="block flex items-center justify-center" href="#top" aria-label="Mishkat home">
-            <img className="h-40 w-40 md:h-56 md:w-56 object-contain" src={`${base}mishkat/mishkat-logo-white.png`} alt="Mishkat Restaurant" />
+            <img className="h-40 w-40 md:h-56 md:w-56 object-contain" src={logoWhite} alt="Mishkat Restaurant" />
           </a>
           <nav className="hidden items-center gap-8 text-[0.69rem] font-medium uppercase tracking-[0.2em] lg:flex xl:gap-11">
             <a className="nav-link" href="#story">Our Story</a>
@@ -237,7 +243,7 @@ export default function App() {
         <div className="reveal mx-auto grid max-w-[1400px] gap-12 lg:grid-cols-12 lg:items-center">
           <div className="relative lg:col-span-7">
             <div className="overflow-hidden border border-royal/20 bg-white p-3 md:p-5">
-              <img className="aspect-[8/5] h-full w-full object-cover transition duration-700 hover:scale-[1.02]" src="/mishkat/shawarma-platter.png" alt="Mishkat chicken shawarma bites with dips and fries" />
+              <img className="aspect-[8/5] h-full w-full object-cover transition duration-700 hover:scale-[1.02]" src={curryImg} alt="Mishkat chicken shawarma bites with dips and fries" />
             </div>
             <span className="absolute -bottom-5 right-4 bg-navy px-5 py-3 text-[0.58rem] uppercase tracking-[0.24em] text-ivory md:right-10">Rolled fresh · served warm</span>
           </div>
@@ -319,10 +325,10 @@ export default function App() {
             <p className="max-w-xs text-sm leading-6 text-charcoal/55">An evening unfolds in details: a passing plate, a poured drink, the glow after dusk.</p>
           </div>
           <div className="gallery-grid">
-            <figure className="gallery-a"><img src="/mishkat/banana-leaf-fish.png" alt="Malabar fish roast presented on banana leaf" /></figure>
-            <figure className="gallery-b"><img src="/mishkat/al-faham.png" alt="Charcoal-grilled Al Faham chicken" /></figure>
-            <figure className="gallery-c"><img src="/mishkat/chicken-grill.png" alt="Spiced grilled chicken with fresh onion and lime" /></figure>
-            <figure className="gallery-d"><img src="/mishkat/pollichathu.png" alt="Fish roasted in banana leaf" /></figure>
+            <figure className="gallery-a"><img src={fishImg} alt="Malabar fish roast presented on banana leaf" /></figure>
+            <figure className="gallery-b"><img src={kebabImg} alt="Charcoal-grilled Al Faham chicken" /></figure>
+            <figure className="gallery-c"><img src={feastImg} alt="Spiced grilled chicken with fresh onion and lime" /></figure>
+            <figure className="gallery-d"><img src={storyImg} alt="Fish roasted in banana leaf" /></figure>
           </div>
         </div>
       </section>

@@ -1,6 +1,8 @@
 import React from "react";
-
-const base = import.meta.env.BASE_URL;
+import chickenGrillImg from "./assets/mishkat/chicken-grill.png";
+import alFahamImg from "./assets/mishkat/al-faham.png";
+import shawarmaPlatterImg from "./assets/mishkat/shawarma-platter.png";
+import pollichathuImg from "./assets/mishkat/pollichathu.png";
 
 const fullMenu = [
   {
@@ -22,7 +24,7 @@ const fullMenu = [
   },
   {
     category: "Chicken Dry Delights",
-    image: `${base}mishkat/chicken-grill.png`,
+    image: chickenGrillImg,
     items: [
       { name: "Chicken Kabab", price: "290" },
       { name: "Pepper Chicken", price: "290" },
@@ -63,7 +65,7 @@ const fullMenu = [
   },
   {
     category: "Mutton Dry Delights",
-    image: `${base}mishkat/al-faham.png`,
+    image: alFahamImg,
     items: [
       { name: "Mutton Fry", price: "330" },
       { name: "Mutton Pepper", price: "330" },
@@ -84,7 +86,7 @@ const fullMenu = [
   },
   {
     category: "Chicken Platters",
-    image: `${base}mishkat/shawarma-platter.png`,
+    image: shawarmaPlatterImg,
     items: [
       { name: "Mishkat Special Platter", price: "1499" },
       { name: "Chicken Platter", price: "899" },
@@ -117,7 +119,7 @@ const fullMenu = [
 
 const tandooriAlFaham = {
   category: "Tandoori & Al Faham",
-  image: `${base}mishkat/pollichathu.png`,
+  image: pollichathuImg,
   headers: ["Q", "H", "F"],
   items: [
     { name: "Al Faham", prices: ["190", "280", "540"] },
